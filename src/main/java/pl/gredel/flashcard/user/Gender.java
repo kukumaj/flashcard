@@ -1,4 +1,4 @@
-package pl.gredel.mongoAPI.user;
+package pl.gredel.flashcard.user;
 
 public enum Gender {
     MALE,

@@ -1,10 +1,10 @@
-package pl.gredel.mongoAPI;
+package pl.gredel.flashcard;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MongoApiApplicationTests {
+class flashcardApplicationTests {
 
 	@Test
 	void contextLoads() {

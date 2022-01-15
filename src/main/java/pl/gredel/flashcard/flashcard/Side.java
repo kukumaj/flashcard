@@ -1,4 +1,4 @@
-package pl.gredel.mongoAPI.flashcard;
+package pl.gredel.flashcard.flashcard;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
@@ -11,4 +11,9 @@ public class Side {
     private String idSide;
     private String sideTitle;
     private String description;
+
+    public Side(String sideTitle, String description) {
+        this.sideTitle = sideTitle;
+        this.description = description;
+    }
 }

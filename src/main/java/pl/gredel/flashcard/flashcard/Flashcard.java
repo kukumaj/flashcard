@@ -1,4 +1,4 @@
-package pl.gredel.mongoAPI.flashcard;
+package pl.gredel.flashcard.flashcard;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
@@ -9,16 +9,14 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Flashcard {
     @Id
     private String idCard;
-    private String cardTitle;
     private String title;
-    private String group;
+    private String category;
     private Side frontSide;
     private Side backSide;
 
-    public Flashcard(String cardTitle, String title, String group, Side frontSide, Side backSide) {
-        this.cardTitle = cardTitle;
+    public Flashcard(String title, String category, Side frontSide, Side backSide) {
         this.title = title;
-        this.group = group;
+        this.category = category;
         this.frontSide = frontSide;
         this.backSide = backSide;
     }
